@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Collapse from './components/Collapse';
+import './scss/file_manifest.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='collapses' >
+
+          <Collapse title="Titre 1" content="Contenu 1" />
+          <Collapse title="Titre 2" content="Contenu 2" />
+          <Collapse title="Titre 3" content="Contenu 3" />
+          <Collapse title="Titre 4" content="Contenu 4" />
+      </div>
+      
     </div>
   );
 }
